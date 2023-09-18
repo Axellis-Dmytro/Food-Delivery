@@ -1,0 +1,77 @@
+.about {
+    margin-bottom: 15rem;
+
+    &__inner {
+        display: flex;
+        gap: 0 12rem;
+    }
+
+    &__content {
+        max-width: 44rem;
+    }
+
+    &__title {
+        margin-bottom: 3rem;
+        
+        span {
+            display: block;
+            font-weight: 700;
+            font-size: 2rem;
+            color: $c_green;
+            -webkit-text-stroke: 0;
+        }
+    }
+
+    &__description {
+        opacity: 0.5;
+        margin-bottom: 4.4rem;
+    }
+
+    &__images {
+        position: relative;
+        width: 54rem;
+        height: 54rem;
+        border-radius: 50%;
+        background-image: url(/img/table.webp);
+        // linear-gradient(180deg, $c_green 65%, transparent);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain, 100%;
+
+        &::before {
+            @include pseudo;
+            top: -3px;
+            left: -3px;
+            width: 54.6rem;
+            height: 54.6rem;
+            border-radius: 50%;
+            z-index: -1;
+            background-image: linear-gradient(180deg, $c_green 50%, transparent);
+        }
+    }
+
+    &__breakfast {
+        position: relative;
+        width: 19.5rem;
+        height: 19.5rem;
+        transform: translateY(-2.5rem);
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &__price {
+        position: absolute;
+        bottom: 3.5rem;
+        right: 1rem;
+        padding: 7px 12px;
+        border-radius: 10rem;
+        background-color: $c_green;
+        color: $c_white;
+        font-family: $font_title;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+}

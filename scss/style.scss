@@ -1,0 +1,26 @@
+// abstract
+@import '../scss/abstract/vars';
+@import '../scss/abstract/mixins';
+
+// base
+@import '../scss/base/reset';
+@import '../scss/base/fonts';
+@import '../scss/base/global';
+
+// components
+@import '../scss/components/search_form';
+@import '../scss/components/product-card';
+@import '../scss/components/btns';
+@import '../scss/components/arrow-link.scss';
+@import '../scss/components/forms.scss';
+@import '../scss/components/review-card.scss';
+// layouts
+@import '../scss/layouts/header.scss';
+@import '../scss/layouts/footer.scss';
+
+// sections
+@import '../scss/sections/hero.scss';
+@import '../scss/sections/popular.scss';
+@import '../scss/sections/about.scss';
+@import '../scss/sections/booking.scss';
+@import '../scss/sections/reviews.scss';

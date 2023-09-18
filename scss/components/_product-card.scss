@@ -1,0 +1,61 @@
+.product-card {
+    position: relative;
+    background-color: $c_white;
+    border-radius: 2.4rem;
+    padding: 26rem 5rem 4rem;
+
+    &::before {
+        @include pseudo;
+        bottom: 0;
+        z-index: -1;
+        width: calc(100% - 8rem);
+        height: 6rem;
+        background-color: rgba($c_black, 0.32);
+        border-radius: 2.4rem;
+        filter: blur(6rem);
+    }
+
+    &__content {
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__image {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 19rem;
+        margin: 0 auto;
+    }
+
+    &__name {
+        max-width: 23rem;
+        font-size: 2.4rem;
+        margin: 0 auto;
+        margin-bottom: 1.8rem;
+    }
+
+    &__price {
+        font-size: 2rem;
+        color: $c_green;
+    }
+
+    &__order {
+        // display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 2.8rem 4.4rem;
+        border-bottom-left-radius: 2.4rem;
+        border-bottom-right-radius: 2.4rem;
+        background-color: $c_orange;
+        color: $c_white;
+        background-image: url(/img/icons/icon_arrow_right_short.svg);
+        background-repeat: no-repeat;
+        background-size: 1.8rem;
+        background-position: center right 4.4rem;
+        opacity: 0;
+    }
+}
